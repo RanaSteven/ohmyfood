@@ -1,0 +1,204 @@
+@media screen and (max-width: 768px) {
+	.menu-flex {
+    flex-direction: column;
+    align-items: center;
+	}
+}
+
+@font-face{
+	font-family: "fontmenu1";
+	src:url("../MaShanZheng-Regular.ttf");
+	font-display: swap;
+}
+@font-face{
+	font-family: "fontmenu2";
+	src:url("../CroissantOne-Regular.ttf");
+	font-display: swap;
+}
+
+@font-face{
+	font-family: "fontmenu3";
+	src:url("../DancingScript-Regular.ttf");
+	font-display: swap;
+}
+
+@font-face{
+	font-family: "fontmenu4";
+	src:url("../KaushanScript-Regular.ttf");
+	font-display: swap;
+}
+
+body{
+	margin: 0;
+}
+
+.footer {
+    width: 100%;
+}
+
+.radius{
+	border-radius: 5px;
+}
+
+.menu-flex, .footer-flex{
+	display: flex;
+}
+
+.column{
+	flex-direction: column;
+}
+
+.row{
+	flex-direction: row;
+}
+
+.fixed{
+	position: fixed;
+	bottom: 0;
+}
+
+.relative{
+	position: relative;
+}
+
+.justify-center{
+	justify-content: center;
+}
+
+.text-align{
+	text-align: center;
+}
+
+.b-color-green{
+	background-color: #5FB68C;
+}
+
+.color-yellow{
+	color: #ECD31C;
+}
+
+.width{
+	width: 50%;
+}
+
+.m-right{
+	margin-right:;
+}
+
+.padding-lien-x{
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
+.padding-lien-y{
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.padding-menu{
+	padding: 10px;
+}
+
+.padding-header{
+	padding: 20px;
+}
+
+.t-align-left{
+	text-align: left;
+}
+
+.t-align-right{
+	text-align: right;
+}
+
+.t-align-left{
+	text-align: left;
+}
+
+.t-deco-none{
+	text-decoration: none;
+}
+
+.size-menu{
+	width: 60%;
+    height: 580px;
+}
+
+.align-content-menu{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.shadow-menu{
+	box-shadow: 0px 0px 10px -2px grey;
+}
+
+.font-size{
+	font-size: 2em;
+}
+
+.menu1{  
+	background-color: #FFC5C5; 
+	font-family: "fontmenu1";
+	color: #543A3A;
+    margin: 5%;
+}
+
+.menu1 a h2 {
+	color: #543A3A;
+}
+
+.menu2{
+	background-color: #F9EBFD; 
+	font-family: "fontmenu2";
+	color: #D07700;
+    margin: 5%;
+}
+
+.menu2 a h2{
+	background-image: linear-gradient(160deg, #D07700  25%, #A644FF 65%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color:transparent;
+
+}
+
+.menu3{
+	background-color: #F5F5F5;
+	font-family: "fontmenu3"; 
+	color: #009FFF;
+    margin: 50px;
+}
+
+.menu3 a h2{
+	background-image: linear-gradient(160deg, #002AC4  25%, #009FFF 65%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color:transparent;
+}
+
+.menu4{
+	font-family: "fontmenu4";
+	color: #2E9016;
+    margin: 50px;  
+}
+
+.menu4 a h2{
+	background-image: linear-gradient(160deg, #2E9016  25%, #86FF69 65%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color:transparent;
+}
+
+.button{
+	margin-bottom: 150px;
+}
+
+.header{
+	margin: 0;
+	font-size: 5em;
+}
