@@ -1,8 +1,16 @@
 @media screen and (max-width: 768px) {
 	.menu-flex {
-    flex-direction: column;
-    align-items: center;
-	}
+    	flex-direction: column;
+    	align-items: center;
+		}
+}
+
+@media screen and (max-width: 768px) {
+	.header a {
+			margin: 0;
+			font-size: 50px;
+			text-align: center;
+		}
 }
 
 @font-face{
@@ -46,7 +54,7 @@ body{
 
 .header{
 	margin: 0;
-	font-size: 5em;
+	font-size: 3rem;
 	text-align: center;
 }
 
@@ -55,17 +63,11 @@ body{
     height: 50px;
     position: fixed;
 	bottom: 0;
+	vertical-align:center;
 }
 
 .width{
 	width: 50%;
-}
-
-.color-logo{
-	background-image: linear-gradient(300deg, orange  25%, red 65%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
 }
 
 .menu{
@@ -79,51 +81,50 @@ body{
     width: 70%;
     height: 580px;
     padding: 30px;
-}
-
-.menu1{ 
-	background-color: #FFC5C5;
-	color: #543A3A;
-}
-
-.menu1 a h2, .menu1 hr, .menu1 h3, .menu1 span{
-	color: #543A3A; 
-	font-family: "fontmenu1";
-}
-
-.menu2{
-	background-color: #F9EBFD;
-	color: #D07700;
-}
-
-.menu2 a h2, .menu2 h3{
-	background-image: linear-gradient(160deg, #D07700  25%, #A644FF 65%);
+	&__menu1{
+		background-color: #FFC5C5;
+		color: #543A3A;
+		a h2, hr, h3, span{
+			font-family:"fontmenu1";
+		}
+	}
+	&__menu2{
+		background-color: #F9EBFD;
+		color: #D07700;
+		a h2, h3{
+			background-image: linear-gradient(160deg, #D07700  25%, #A644FF 65%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
 	font-family: "fontmenu2";
-}
-
-.menu3{
-	background-color: #F5F5F5;
-	font-family: "fontmenu3"; 
-	color: #009FFF;
-}
-
-.menu3 a h2{
-	background-image: linear-gradient(160deg, #002AC4  25%, #009FFF 65%);
+		}
+	}
+	&__menu3{
+		background-color: #F5F5F5;
+		color: #009FFF;
+		a h2, h3{
+			background-image: linear-gradient(160deg, #002AC4  25%, #009FFF 65%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
-}
-
-.menu4{
+	font-family: "fontmenu3";
+		}
+	}
+	&__menu4{
+		background-color: #FFFFFF;
+		color: #2E9016;
+		a h2, h3{
+			background-image: linear-gradient(160deg, #2E9016  25%, #86FF69 65%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
 	font-family: "fontmenu4";
-	color: #2E9016; 
-}
+		}
+	}
+} 
 
-.menu4 a h2{
-	background-image: linear-gradient(160deg, #2E9016  25%, #86FF69 65%);
+.color-logo{
+	background-image: linear-gradient(300deg, orange  25%, red 65%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
@@ -149,16 +150,6 @@ body{
 	text-align: center;
 }
 
-.padding-lien-x{
-	padding-right: 2%;
-	padding-left: 2%;
-}
-
-.padding-lien-y{
-	padding-top: 2%;
-	padding-bottom: 2%;
-}
-
 .padding-header{
 	padding: 20px;
 }
@@ -167,7 +158,7 @@ body{
 	text-align: right;
 }
 
-.font-size-btn, .font-size-lien, .size-nom-menu2{
+.font-size-btn, .size-nom-menu2{
 	font-size: 1.5em;
 }
 
@@ -202,26 +193,17 @@ body{
 	margin-bottom: 50px;
 }
 
-.margin-sous-titre-menu1{
-	margin: 0px 100px 0px 100px;
-}
-
-.margin-sous-titre-menu2{
-	margin: 0px 20px 0px 20px;
-}
-
 .size-nom-menu1{
 	font-size: 2.5em;
 }
 
 .plats{
-	width: 90%;
-	text-align: justify;
+	width: 80%;
 	font-size: 1.5em;
 }
 
 .prix{
-	width: 10%;
+	width: 20%;
 	font-size: 1.5em;
 }
 
@@ -229,6 +211,18 @@ body{
 	justify-content: space-between;
 	text-align: center;
 	font-size: 1.5em; 
+}
+
+.margin-sous-titre{
+	margin: -10px;
+}
+
+.margin-carte-menu1{
+	margin: 0px 100px 0px 100px;
+}
+
+.margin-carte{
+	margin: 0px 20px 0px 20px;
 }
 
 .barre-sous-titre{
@@ -252,31 +246,41 @@ body{
 }
 
 .barre-sous-titre-menu2-bas{
-    background-color: #1C64EC;
+    background-color: #6824C0;
 }
 
-.barre-sous-titre-menu4-haut{
-    background-color:;
-}
-
-.barre-sous-titre-menu4-milieu{
-    background-color:;
-}
-
-.barre-sous-titre-menu4-bas{
-    background-color:;
-}
-
-
-.color-haut{
+.color-menu2-haut{
 	color: #D07700;
 }
 
-.color-milieu{
+.color-menu2-milieu{
 	color: #A644FF;
 }
 
-.color-bas{
-	color: #1C64EC;
+.color-menu2-bas{
+	color: #6824C0;
 }
 
+.barre-sous-titre-menu3-haut{
+    background-color: #002AC4;
+}
+
+.barre-sous-titre-menu3-milieu{
+    background-color: #0055FF;
+}
+
+.barre-sous-titre-menu3-bas{
+    background-color: #009FFF;
+}
+
+.black{
+	color: black;
+}
+
+.barre-sous-titre-gauche{
+	background-image: linear-gradient(160deg, #2E9016  25%, #86FF69 65%);
+}
+
+.barre-sous-titre-droite{
+	background-image: linear-gradient(-160deg, #2E9016  25%, #86FF69 65%);
+}
