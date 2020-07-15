@@ -1,0 +1,455 @@
+@media screen and (max-width: 768px) {
+	.menu-flex {
+    	flex-direction: column;
+    	align-items: center;
+		}	
+	.header a{
+		font-size: 4rem;
+	}	
+}
+
+@media screen and (max-width: 375px) {
+	.header a{
+		font-size: 3rem;
+	}
+	.menu a{
+	font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.header a{
+		font-size: 2rem;
+	}
+
+	.header{
+		font-size: 3rem !IMPORTANT;
+	}
+
+	.footer{
+		padding-top: 5px !IMPORTANT;
+	}
+
+	.footer-flex{
+		flex-direction: column;
+	}
+	.footer__width{
+		width: 100% !IMPORTANT;
+		text-align: center !IMPORTANT;
+	}
+	.btn{
+		font-size: 1em !IMPORTANT;
+	}
+}
+
+@font-face{
+	font-family: "fontmenu1";
+	src:url("../MaShanZheng-Regular.ttf");
+	font-display: swap;
+}
+@font-face{
+	font-family: "fontmenu2";
+	src:url("../CroissantOne-Regular.ttf");
+	font-display: swap;
+}
+
+@font-face{
+	font-family: "fontmenu3";
+	src:url("../DancingScript-Regular.ttf");
+	font-display: swap;
+}
+
+@font-face{
+	font-family: "fontmenu4";
+	src:url("../KaushanScript-Regular.ttf");
+	font-display: swap;
+}
+
+$color-site: #5FB68C;
+$color-lien-site: #ECD31C;
+$b-color-menu1: #FFC5C5;
+$color-menu1: #543A3A; 
+$b-color-menu2: #F9EBFD;
+$color-menu2: #D07700;
+$color-menu2-milieu: #A644FF;
+$color-menu2-bas: #6824C0;
+$b-color-menu3: #F5F5F5;
+$color-menu3: #009FFF;
+$color-menu3-haut: #002AC4;
+$color-menu3-milieu: #0055FF;
+$color-menu3-bas: #009FFF;
+$b-color-menu4: #FFFFFF;
+$color-menu4: #2E9016;
+$main-color-text-menu: #000000;
+
+body{
+	margin: 0;
+}
+
+.flex, .menu-flex, .footer-flex{
+	display: flex;
+}
+
+.background-color{
+	background-color: $color-site;
+}
+
+.lien-color{
+	color: $color-lien-site;
+}
+
+.fix{
+	position: fixed;
+}
+
+.width{
+	width: 100%;
+}
+
+.position-main-accueil{
+	margin-top: 150px;
+}
+
+.header{
+	font-size: 5rem;
+	text-align: center;
+	padding: 10px;
+	top: 0;
+	z-index: 1;
+}
+
+.header, .point, footer a{
+	font-weight: bold;
+}
+
+.footer{
+    height: 40px;
+	bottom: 0;
+	padding-top: 15px;
+	&__width{
+		width: 50%;
+	}
+}
+
+.footer a{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+section a:hover{
+    font-size: 2.5rem;
+    transition-duration: 1s;
+    opacity: 40%;
+}
+
+.menu{
+	margin: 50px;
+	box-shadow: 0px 0px 10px -2px grey;
+	font-size: 2em;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    height: 580px;
+    padding: 30px;
+    transform: scale(1);
+    transition: all 1s;
+    &:hover a{
+    	transform: scale(1);
+    }
+
+	&__menu1{
+		background-color: $b-color-menu1;
+		color: $color-menu1;
+		a p, h2{
+			color: $color-menu1;
+		}
+		a h2, h3, span{
+			font-family: "fontmenu1";
+			}
+		.margin__sous-titre:after{
+		background-color: $color-menu1;
+		}
+	}
+	
+	&__menu2{
+		background-color: $b-color-menu2;
+		color: $color-menu2;
+		a p{
+			color: $color-menu2;
+		}
+		a h2, h3{
+			background-image: linear-gradient(160deg, #D07700  25%, #A644FF 65%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-family: "fontmenu2";
+		}
+		.color-menu2-haut div div:after{
+		background-color: $color-menu2;
+		}
+		.color-menu2-milieu div div:after{
+		background-color: $color-menu2-milieu;
+		}
+		.color-menu2-bas div div:after{
+		background-color: $color-menu2-bas;
+		}
+	}
+	&__menu3{
+		background-color: $b-color-menu3;
+		color: $color-menu3;
+		a p{
+			color: $color-menu3;
+		}
+		a h2, h3{
+			background-image: linear-gradient(160deg, #002AC4  25%, #009FFF 65%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-family: "fontmenu3";
+		}
+		.barre-sous-titre__menu3-haut+div:after{
+		background-color: $color-menu3-haut;
+		}
+		.barre-sous-titre__menu3-milieu+div:after{
+		background-color: $color-menu3-milieu;
+		}
+		.barre-sous-titre__menu3-bas+div:after{
+		background-color: $color-menu3-bas;
+		}
+	}
+	&__menu4{
+		background-color: $b-color-menu4;
+		color: $color-menu4;
+		a p{
+			color: $color-menu4;
+		}
+		a h2, h3{
+			background-image: linear-gradient(160deg, #2E9016  25%, #86FF69 65%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-family: "fontmenu4";
+		}
+		.barre-sous-titre__gauche+div:after{
+		background-color: $color-menu4;
+		}
+	}
+} 
+
+.color-logo{
+	background-image: linear-gradient(300deg, orange  25%, red 65%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.t-deco-none{
+	text-decoration: none;
+}
+
+.radius{
+	border-radius: 5px;
+}
+
+.text-align{
+	&__center{
+		text-align: center;
+	}
+	&__right{
+		text-align: right;
+	}
+}
+
+.btn{
+	margin-bottom: 100px;
+    padding: 1.5rem 5rem;
+    border-radius: 2rem;
+    border: none;
+}
+
+.point{
+	font-size: 2rem;
+}
+
+/* Page Menus */
+.padding-titre-menu{
+	padding: 50px 20px 20px 20px;
+}
+
+.size__nom-menu2, .size__sous-titre, .size__plats, .size__prix, .size__nom-menu, .btn{
+	font-size: 2em;
+}
+
+.vertical-align-middle{
+	align-self: center;
+}
+
+.position-main-menu{
+	margin: 100px 100px 150px 100px;
+	padding: 0px 0px 50px 0px;
+}
+
+.margin{
+	&__sous-titre{
+		margin: -10px;
+	}
+	&__carte-menu1{
+		margin: 0px 100px 0px 100px;
+	}
+	&__carte{
+		margin: 0px 20px 0px 20px;
+	}
+	&__texte-menu{
+	margin: 50px 100px 50px 100px;
+	}
+	&__margin-plats-menu{
+	margin: 10px 0px 10px 0px;
+	}
+	&__margin-titre-menu{
+	margin-top: 0;
+	margin-bottom: 50px;
+	}
+}
+
+.size{
+	&__sous-titre{
+		justify-content: space-between;
+		text-align: center;
+	}
+	&__plats{
+		width: 80%;
+	}
+	&__prix{
+		width: 20%;
+	}
+}
+
+.barre-sous-titre{
+	border: none;
+	height: 4px;
+	width: 35%;
+	margin: 0;
+	&__menu1{
+		background-color: $color-menu1;
+	}
+	&__menu2-haut{
+		background-color: $color-menu2;
+	}
+	&__menu2-milieu{
+		background-color: $color-menu2-milieu;
+	}
+	&__menu2-bas{
+		background-color: $color-menu2-bas;
+	}
+	&__menu3-haut{
+		background-color: $color-menu3-haut;
+	}
+	&__menu3-milieu{
+		background-color: $color-menu3-milieu;
+	}
+	&__menu3-bas{
+		background-color: $color-menu3-bas;
+	}
+	&__gauche{
+		background-image: linear-gradient(160deg, #2E9016  25%, #86FF69 65%);
+	}
+	&__droite{
+	background-image: linear-gradient(-160deg, #2E9016  25%, #86FF69 65%);
+	}
+}
+
+.color-menu2-haut{
+	color: $color-menu2;
+}
+
+.color-menu2-milieu{
+	color: $color-menu2-milieu;
+}
+
+.color-menu2-bas{
+	color: $color-menu2-bas;
+}
+
+.main-color-text-menu{
+	color: $main-color-text-menu;
+}
+
+@keyframes lien-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-1.5deg);
+    }  
+
+    40% {
+        transform: rotate(0deg);
+    }    
+  	
+  	60% {
+        transform: rotate(1.5deg);
+    } 
+
+    80% {
+        transform: rotate(0deg);
+    }    
+   
+    100% {
+        transform: rotate(-1.5deg);
+    }
+}
+
+footer a:hover{
+	animation: lien-animation 200ms;
+}
+
+section div div:after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0;
+    transition: width 0.5s;
+}
+section div div:hover:after {
+    width: 100%;
+    background: $color-lien-site;
+}
+
+@keyframes suspension-animation{
+  	0% {
+    	opacity: 0;
+    }
+
+    33% {
+    	opacity: 0.33;
+    }  
+
+    66% {
+    	opacity: 0.66;
+    }
+
+
+    100% {
+    	opacity: 1;
+    }
+}
+
+.point1, .point2, .point3{
+	background-color: $color-site;
+	font-weight: bold;
+}
+
+.point1{
+	animation: suspension-animation 1s 0s infinite;
+}
+
+.point2{
+	animation: suspension-animation 1s 0.33s infinite;
+}
+
+.point3{
+	animation: suspension-animation 1s 0.66s infinite;
+}
