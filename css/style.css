@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/* Déclaration des variables */
+/* Ajout des polices utilisées */
 @font-face {
   font-family: "fontmenu1";
   src: url("../MaShanZheng-Regular.ttf");
@@ -22,6 +25,8 @@
   .menu {
     width: 35% !important;
     margin: 50px 20px 50px 20px !IMPORTANT; } }
+/* MediaQueries pour le responsives */
+/* Pour les écrans de tailles maximum 768px (Tablettes) */
 @media screen and (max-width: 768px) {
   .menu-flex {
     flex-direction: column;
@@ -44,6 +49,7 @@
 
   .margin__carte-menu1 {
     margin: 0px 20px 0px 20px !IMPORTANT; } }
+/* Pour les écrans de tailles maximum 375px (Mobile M) */
 @media screen and (max-width: 375px) {
   .header a {
     font-size: 3rem; }
@@ -70,6 +76,7 @@
 
   .position-main-menu {
     margin: 50px 20px 80px 20px !IMPORTANT; } }
+/* Pour les écrans de tailles maximum 320px (Mobile S) */
 @media screen and (max-width: 320px) {
   .header a {
     font-size: 2rem; }
@@ -142,6 +149,7 @@ body {
   padding-left: 10px;
   padding-right: 10px; }
 
+/* Taille standard menu */
 .menu {
   margin: 50px;
   box-shadow: 0px 0px 10px -2px grey;
@@ -153,13 +161,15 @@ body {
   width: 70%;
   height: 500px;
   padding: 30px;
+  /* Durée animation menu page d'accueil */
   transform: scale(1);
   transition: all 1s; }
   .menu:hover a {
     transform: scale(1); }
   .menu__menu1 {
     background-color: #FFC5C5;
-    color: #543A3A; }
+    color: #543A3A;
+    /* Animation de soulignement des sous-titres: entrées, plats et desserts */ }
     .menu__menu1 a p, .menu__menu1 h2 {
       color: #543A3A; }
     .menu__menu1 a h2, .menu__menu1 h3, .menu__menu1 span {
@@ -168,7 +178,8 @@ body {
       background-color: #543A3A; }
   .menu__menu2 {
     background-color: #F9EBFD;
-    color: #D07700; }
+    color: #D07700;
+    /* Animation de soulignement des sous-titres: entrées, plats et desserts */ }
     .menu__menu2 a p {
       color: #D07700; }
     .menu__menu2 a h2, .menu__menu2 h3 {
@@ -184,7 +195,8 @@ body {
       background-color: #6824C0; }
   .menu__menu3 {
     background-color: #F5F5F5;
-    color: #009FFF; }
+    color: #009FFF;
+    /* Animation de soulignement des sous-titres: entrées, plats et desserts */ }
     .menu__menu3 a p {
       color: #009FFF; }
     .menu__menu3 a h2, .menu__menu3 h3 {
@@ -200,7 +212,8 @@ body {
       background-color: #009FFF; }
   .menu__menu4 {
     background-color: #FFFFFF;
-    color: #2E9016; }
+    color: #2E9016;
+    /* Animation de soulignement des sous-titres: entrées, plats et desserts */ }
     .menu__menu4 a p {
       color: #2E9016; }
     .menu__menu4 a h2, .menu__menu4 h3 {
@@ -211,6 +224,7 @@ body {
     .menu__menu4 .barre-sous-titre__gauche + div:after {
       background-color: #2E9016; }
 
+/* Animation d'aggrandissement et d'opacité des menus au passage de la souris */
 div a:hover {
   font-size: 2.5rem;
   transition-duration: 1s;
@@ -233,14 +247,18 @@ div a:hover {
   background-color: #5FB68C;
   font-weight: bold; }
 
-.point1 {
-  animation: suspension-animation 1s 0s infinite; }
+/* Animation des points de suspension
+.point1{
+  animation: suspension-animation 1s 0s infinite;
+}
 
-.point2 {
-  animation: suspension-animation 1s 0.33s infinite; }
+.point2{
+  animation: suspension-animation 1s 0.33s infinite;
+}
 
-.point3 {
-  animation: suspension-animation 1s 0.66s infinite; }
+.point3{
+  animation: suspension-animation 1s 0.66s infinite;
+}
 
 /* Page Menus */
 .padding-titre-menu {
@@ -317,6 +335,7 @@ div a:hover {
 .main-color-text-menu {
   color: #000000; }
 
+/* Règles d'animation des liens du footer */
 @keyframes lien-animation {
   0% {
     transform: rotate(0deg); }
@@ -330,14 +349,17 @@ div a:hover {
     transform: rotate(0deg); }
   100% {
     transform: rotate(-1.5deg); } }
+/* Règles d'animation des points de suspension */
 @keyframes suspension-animation {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
+/* Durée animation des liens du footer */
 footer a:hover {
   animation: lien-animation 200ms; }
 
+/* Règles animations des sous-titres entrées, plats et desserts */
 div div div:after {
   content: '';
   display: block;
