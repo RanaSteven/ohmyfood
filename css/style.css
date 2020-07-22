@@ -247,18 +247,15 @@ div a:hover {
   background-color: #5FB68C;
   font-weight: bold; }
 
-/* Animation des points de suspension
-.point1{
-  animation: suspension-animation 1s 0s infinite;
-}
+/* Animation des points de suspension */
+.point1 {
+  animation: suspension-animation 1s 0s infinite; }
 
-.point2{
-  animation: suspension-animation 1s 0.33s infinite;
-}
+.point2 {
+  animation: suspension-animation 1s 0.33s infinite; }
 
-.point3{
-  animation: suspension-animation 1s 0.66s infinite;
-}
+.point3 {
+  animation: suspension-animation 1s 0.66s infinite; }
 
 /* Page Menus */
 .padding-titre-menu {
