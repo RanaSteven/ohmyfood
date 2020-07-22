@@ -1,16 +1,75 @@
+@font-face {
+  font-family: "fontmenu1";
+  src: url("../MaShanZheng-Regular.ttf");
+  font-display: swap; }
+@font-face {
+  font-family: "fontmenu2";
+  src: url("../CroissantOne-Regular.ttf");
+  font-display: swap; }
+@font-face {
+  font-family: "fontmenu3";
+  src: url("../DancingScript-Regular.ttf");
+  font-display: swap; }
+@font-face {
+  font-family: "fontmenu4";
+  src: url("../KaushanScript-Regular.ttf");
+  font-display: swap; }
+@media screen and (min-width: 769px) {
+  .menu-flex {
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+
+  .menu {
+    width: 35% !important;
+    margin: 50px 20px 50px 20px !IMPORTANT; } }
 @media screen and (max-width: 768px) {
   .menu-flex {
     flex-direction: column;
     align-items: center; }
 
   .header a {
-    font-size: 4rem; } }
+    font-size: 4rem; }
+
+  .menu {
+    height: 470px !IMPORTANT; }
+
+  .position-main-menu {
+    margin: 100px 20px 130px 20px !IMPORTANT; }
+
+  .margin__texte-menu {
+    margin: 50px 50px 50px 50px !IMPORTANT; }
+
+  .size__nom-menu2, .size__sous-titre, .size__plats, .size__prix, .size__nom-menu, .btn {
+    font-size: 1.5em !IMPORTANT; }
+
+  .margin__carte-menu1 {
+    margin: 0px 20px 0px 20px !IMPORTANT; } }
 @media screen and (max-width: 375px) {
   .header a {
     font-size: 3rem; }
 
   .menu a {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+
+  .btn {
+    margin-bottom: 60px !IMPORTANT;
+    font-size: 1.3rem !IMPORTANT;
+    display: block;
+    width: 100%; }
+
+  .menu {
+    margin: 10px !IMPORTANT;
+    height: 280px !IMPORTANT;
+    padding: 10px !IMPORTANT; }
+
+  .position-main-accueil {
+    margin-top: 120px !IMPORTANT; }
+
+  .size__nom-menu2, .size__sous-titre, .size__plats, .size__prix, .size__nom-menu, .btn {
+    font-size: 1em !IMPORTANT; }
+
+  .position-main-menu {
+    margin: 50px 20px 80px 20px !IMPORTANT; } }
 @media screen and (max-width: 320px) {
   .header a {
     font-size: 2rem; }
@@ -30,27 +89,8 @@
 
   .btn {
     font-size: 1em !IMPORTANT; } }
-@font-face {
-  font-family: "fontmenu1";
-  src: url("../MaShanZheng-Regular.ttf");
-  font-display: swap; }
-@font-face {
-  font-family: "fontmenu2";
-  src: url("../CroissantOne-Regular.ttf");
-  font-display: swap; }
-@font-face {
-  font-family: "fontmenu3";
-  src: url("../DancingScript-Regular.ttf");
-  font-display: swap; }
-@font-face {
-  font-family: "fontmenu4";
-  src: url("../KaushanScript-Regular.ttf");
-  font-display: swap; }
 body {
   margin: 0; }
-
-.flex, .menu-flex, .footer-flex {
-  display: flex; }
 
 .background-color {
   background-color: #5FB68C; }
@@ -64,8 +104,16 @@ body {
 .width {
   width: 100%; }
 
-.position-main-accueil {
-  margin-top: 150px; }
+.t-deco-none {
+  text-decoration: none; }
+
+.radius {
+  border-radius: 5px; }
+
+.text-align__center {
+  text-align: center; }
+.text-align__right {
+  text-align: right; }
 
 .header {
   font-size: 5rem;
@@ -74,8 +122,14 @@ body {
   top: 0;
   z-index: 1; }
 
-.header, .point, footer a {
+.header, footer a {
   font-weight: bold; }
+
+.position-main-accueil {
+  margin-top: 130px; }
+
+.flex, .menu-flex, .footer-flex {
+  display: flex; }
 
 .footer {
   height: 40px;
@@ -88,11 +142,6 @@ body {
   padding-left: 10px;
   padding-right: 10px; }
 
-section a:hover {
-  font-size: 2.5rem;
-  transition-duration: 1s;
-  opacity: 40%; }
-
 .menu {
   margin: 50px;
   box-shadow: 0px 0px 10px -2px grey;
@@ -102,7 +151,7 @@ section a:hover {
   justify-content: center;
   text-align: center;
   width: 70%;
-  height: 580px;
+  height: 500px;
   padding: 30px;
   transform: scale(1);
   transition: all 1s; }
@@ -124,7 +173,6 @@ section a:hover {
       color: #D07700; }
     .menu__menu2 a h2, .menu__menu2 h3 {
       background-image: linear-gradient(160deg, #D07700 25%, #A644FF 65%);
-      background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
       font-family: "fontmenu2"; }
@@ -141,7 +189,6 @@ section a:hover {
       color: #009FFF; }
     .menu__menu3 a h2, .menu__menu3 h3 {
       background-image: linear-gradient(160deg, #002AC4 25%, #009FFF 65%);
-      background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
       font-family: "fontmenu3"; }
@@ -158,52 +205,53 @@ section a:hover {
       color: #2E9016; }
     .menu__menu4 a h2, .menu__menu4 h3 {
       background-image: linear-gradient(160deg, #2E9016 25%, #86FF69 65%);
-      background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
       font-family: "fontmenu4"; }
     .menu__menu4 .barre-sous-titre__gauche + div:after {
       background-color: #2E9016; }
 
+div a:hover {
+  font-size: 2.5rem;
+  transition-duration: 1s;
+  opacity: 40%; }
+
 .color-logo {
   background-image: linear-gradient(300deg, orange 25%, red 65%);
-  background-clip: text;
   -webkit-background-clip: text;
-  color: transparent; }
-
-.t-deco-none {
-  text-decoration: none; }
-
-.radius {
-  border-radius: 5px; }
-
-.text-align__center {
-  text-align: center; }
-.text-align__right {
-  text-align: right; }
+  color: transparent;
+  padding-right: 3%;
+  padding-left: 3%; }
 
 .btn {
   margin-bottom: 100px;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
   border: none; }
 
-.point {
-  font-size: 2rem; }
+.point1, .point2, .point3 {
+  background-color: #5FB68C;
+  font-weight: bold; }
+
+.point1 {
+  animation: suspension-animation 1s 0s infinite; }
+
+.point2 {
+  animation: suspension-animation 1s 0.33s infinite; }
+
+.point3 {
+  animation: suspension-animation 1s 0.66s infinite; }
 
 /* Page Menus */
 .padding-titre-menu {
   padding: 50px 20px 20px 20px; }
 
-.size__nom-menu2, .size__sous-titre, .size__plats, .size__prix, .size__nom-menu, .btn {
-  font-size: 2em; }
+.position-main-menu {
+  margin: 60px 40px 130px 40px;
+  padding: 0px 0px 50px 0px; }
 
 .vertical-align-middle {
   align-self: center; }
-
-.position-main-menu {
-  margin: 100px 100px 150px 100px;
-  padding: 0px 0px 50px 0px; }
 
 .margin__sous-titre {
   margin: -10px; }
@@ -213,11 +261,17 @@ section a:hover {
   margin: 0px 20px 0px 20px; }
 .margin__texte-menu {
   margin: 50px 100px 50px 100px; }
-.margin__margin-plats-menu {
+.margin__plats-menu {
   margin: 10px 0px 10px 0px; }
-.margin__margin-titre-menu {
+.margin__titre-menu {
   margin-top: 0;
   margin-bottom: 50px; }
+
+.size__nom-menu2, .size__sous-titre, .size__plats, .size__prix, .size__nom-menu, .btn {
+  font-size: 2em; }
+
+.size__plats, .size__prix {
+  margin: 10px 0px 10px 0px; }
 
 .size__sous-titre {
   justify-content: space-between;
@@ -276,40 +330,22 @@ section a:hover {
     transform: rotate(0deg); }
   100% {
     transform: rotate(-1.5deg); } }
+@keyframes suspension-animation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 footer a:hover {
   animation: lien-animation 200ms; }
 
-section div div:after {
+div div div:after {
   content: '';
   display: block;
   height: 5px;
   width: 0;
   transition: width 0.5s; }
 
-section div div:hover:after {
-  width: 100%;
-  background: #ECD31C; }
-
-@keyframes suspension-animation {
-  0% {
-    opacity: 0; }
-  33% {
-    opacity: 0.33; }
-  66% {
-    opacity: 0.66; }
-  100% {
-    opacity: 1; } }
-.point1, .point2, .point3 {
-  background-color: #5FB68C;
-  font-weight: bold; }
-
-.point1 {
-  animation: suspension-animation 1s 0s infinite; }
-
-.point2 {
-  animation: suspension-animation 1s 0.33s infinite; }
-
-.point3 {
-  animation: suspension-animation 1s 0.66s infinite; }
+div div div:hover:after {
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
